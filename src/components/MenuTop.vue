@@ -1,17 +1,20 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid">
             <router-link to="/" class="navbar-brand">
-                <span class="fas fa-home"></span>
-                <span class="nav-item nav-link active">CV</span>
+                <span class="nav-item nav-link active">
+                    <fa icon="home" class="home-icon"></fa>
+                    <span class="home-c">C</span>
+                    <span class="home-v">V</span>
+                </span>
             </router-link>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="#menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse d-flex" id="menu">
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
                 <div class="">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <router-link to="/who-i-am" class="nav-link">
@@ -27,7 +30,7 @@
             </div>
             </div>
         </div>
-    </nav> 
+    </nav>
   <router-view/>
 </template>
   
@@ -36,7 +39,25 @@
 </script>
 
 <style scoped>
-.navbar-brand {
-   font-weight: 700; 
-} 
+    .nav-link, .nav-item {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .home-icon {
+        font-size: 30px;
+    }
+
+    .home-c {
+        font-weight: bold;
+        position: relative;
+        top: -10px;
+        font-size: 25px;
+    }
+    .home-v {
+        position: relative;
+        font-weight: bold;
+        font-size: 25px;
+        top: 5px;
+    }
 </style>

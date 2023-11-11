@@ -7,11 +7,20 @@ import router from './router'
 //import bootstrap from './bootstrap';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
-/* Fontawesome */
-/*import "@fortawesome/fontawesome-free/css/fontawesome.min";
-import "@fortawesome/fontawesome-free/css/brands.min";
-import "@fortawesome/fontawesome-free/css/regular.min";
-import "@fortawesome/fontawesome-free/css/solid.min";*/
+/* import the fontawesome core */
+import { library } from '@fortawesome/fontawesome-svg-core'
 
+/* import specific icons */
+import { faFacebookSquare, faInstagramSquare, faLinkedin, faGooglePlusG, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 
-createApp(App).use(router).mount('#app')
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+/* add icons to the library */
+library.add(faHome, faFacebookSquare, faInstagramSquare, faLinkedin, faGooglePlusG, faTwitterSquare);
+
+createApp(App)
+    .component('fa', FontAwesomeIcon)
+    .use(router)
+    .mount('#app')

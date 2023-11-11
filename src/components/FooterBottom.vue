@@ -1,20 +1,33 @@
 <template>
-    <div class="container text-center">
+    <footer class="text-center bg-secondary p-5">
         <div class="row justify-content-lg-center">
             <div class="col">
-                <span class="">1</span>
+                <router-link to="#" class="navbar-brand">
+                    <fa :icon="['fab', 'facebook-square']" size="2x" />
+                </router-link>
             </div>
             <div class="col">
-                <span class="">2</span>
+                <router-link to="#" class="navbar-brand">
+                    <fa :icon="['fab', 'instagram-square']" size="2x"/>
+                </router-link>
             </div>
             <div class="col">
-                <span class="">3</span>
+                <router-link to="#" class="navbar-brand">
+                    <fa :icon="['fab', 'linkedin']" size="2x"/>
+                </router-link>
             </div>
             <div class="col">
-                <span class="">4</span>
+                <router-link to="#" class="navbar-brand">
+                    <fa :icon="['fab', 'twitter-square']" size="2x"/>
+                </router-link>
+            </div>
+            <div class="col">
+                <router-link to="#" class="navbar-brand">
+                    <fa :icon="['fab', 'google-plus-g']" size="2x"/>
+                </router-link>
             </div>
         </div>
-    </div> 
+    </footer> 
 </template>
   
 <script>
@@ -22,5 +35,7 @@
 </script>
 
 <style scoped>
-
+    * {
+        color: #fff;
+    }
 </style>
