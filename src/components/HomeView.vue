@@ -1,8 +1,15 @@
 <template>
   <div class="hello">
-    <img src="" alt="">
-    <h1>Ornêlo Samuel Paulo Kambonga</h1>
-    <h4>- Engenheiro Informático</h4>
+    <div class="card">
+      <div class="card-body">
+        <img src="" class="card-img-top" alt="...">
+
+        <h1>Ornêlo Samuel Paulo Kambonga</h1>
+        <h4>- Engenheiro Informático</h4>
+      </div>
+    </div>
+
+    
   </div>
 </template>
 
